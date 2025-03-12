@@ -2,6 +2,7 @@ package co.sumit.design.pattern.structural;
 
 /* Adapter Pattern (Bridges two incompatible interfaces)
  * Helps two incompatible classes work together.
+ * Use Case: When integrating legacy systems with new interfaces.
  */
 
 public class AdapterPattern {

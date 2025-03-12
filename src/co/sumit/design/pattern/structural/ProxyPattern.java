@@ -1,5 +1,9 @@
 package co.sumit.design.pattern.structural;
 
+/* Proxy Pattern (Acts as a placeholder for another object)
+ * Useful for lazy initialization, access control, logging, or caching.
+ * Use Case: When controlling access to expensive operations (e.g., database access, network calls).
+ */
 public class ProxyPattern {
 
 	interface Service {
