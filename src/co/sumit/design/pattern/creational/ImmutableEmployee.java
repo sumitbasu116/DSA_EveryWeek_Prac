@@ -1,4 +1,4 @@
-package co.sumit.design.pattern;
+package co.sumit.design.pattern.creational;
 
 import java.util.ArrayList;
 import java.util.List;

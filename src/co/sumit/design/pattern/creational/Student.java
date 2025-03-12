@@ -1,4 +1,4 @@
-package co.sumit.design.pattern;
+package co.sumit.design.pattern.creational;
 
 public class Student {
 	//mandatory fields
