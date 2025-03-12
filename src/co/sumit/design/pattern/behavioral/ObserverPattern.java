@@ -7,6 +7,7 @@ import java.util.List;
  * These patterns define how objects interact with each other.
  * Observer Pattern (Publish-Subscribe Model)
  * Used when multiple objects need to react to state changes in another object.
+ * Use Case: Event-driven applications, Kafka consumers, or notification systems.
  */
 public class ObserverPattern {
 
