@@ -1,9 +1,10 @@
 package co.sumit.DSA.mostimportant.GFG;
 
+//https://www.geeksforgeeks.org/most-asked-dsa-interview-problems-for-beginners/
 public class WaveArray {
 
 	
-	
+	//https://www.geeksforgeeks.org/problems/wave-array-1587115621/1
 	public static void convertToWave(int[] arr) {
         int len=0;
 		if(arr.length%2==0) {
