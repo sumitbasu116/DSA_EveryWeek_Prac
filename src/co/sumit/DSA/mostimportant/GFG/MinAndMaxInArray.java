@@ -31,17 +31,18 @@ public class MinAndMaxInArray {
 			res = new Pair<Integer, Integer>(-1, -1);
 		}else if(arr.length==1) {
 			res = new Pair<Integer, Integer>(arr[0], arr[0]);
-		}
-		for(int e:arr) {
-			if(e>max) {
-				max=e;
-				res = new Pair<Integer, Integer>(min, max);
+		}else {
+			for(int e:arr) {
+				if(e>max) {
+					max=e;
+				}
+				if(e<min) {
+					min=e;
+				}
 			}
-			if(e<min) {
-				min=e;
-				res = new Pair<Integer, Integer>(min, max);
-			}
 		}
+		
+		res = new Pair<Integer, Integer>(min, max);
 		return res;
 	}
 
