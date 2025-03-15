@@ -14,19 +14,6 @@ public class RotateByNinetydegree {
 		rotateby90(n, arr);
 		printMatrix(arr);
 	}
-
-	private static void transpose(int n, int[][] arr) {
-		
-		for(int i=0;i<n;i++) {
-			for(int j=i+1;j<n;j++) {
-				int temp = arr[i][j];
-				arr[i][j]=arr[j][i];
-				arr[j][i]=temp;
-			}
-		}
-	
-	}
-
 	public static void printMatrix(int[][] matrix) {
 		for (int[] row : matrix) {
 			for (int num : row) {
@@ -37,7 +24,13 @@ public class RotateByNinetydegree {
 	}
 
 	static void rotateby90(int n , int arr[][]) {
-		transpose(n, arr);
+		for(int i=0;i<n;i++) {
+			for(int j=i+1;j<n;j++) {
+				int temp = arr[i][j];
+				arr[i][j]=arr[j][i];
+				arr[j][i]=temp;
+			}
+		}
 		
 		for(int i=0;i<n/2;i++) {
 			for(int j=0;j<n;j++) {
